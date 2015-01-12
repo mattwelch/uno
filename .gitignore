@@ -9,3 +9,20 @@ assets/scss/bourbon/*
 # ignore the sass-cache/
 .sass-cache/*
 **/.sass-cache/*
+
+
+# Directories
+
+.DS_Store
+.idea
+.tmp
+.sass-cache
+test
+release
+bower_components
+node_modules
+
+# Files
+
+.notes
+*.log

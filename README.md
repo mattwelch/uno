@@ -1,3 +1,7 @@
+### Updates
+Forked from [uno](https://github.com/daleanthony/uno).
+Gruntified, based on ideas from [Ghunt](https://github.com/danecando/ghunt).
+
 # Uno for Ghost
 
 
