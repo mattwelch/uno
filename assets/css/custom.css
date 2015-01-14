@@ -1,0 +1,12 @@
+img[src$='#floatleft'] {
+  float:left;
+}
+img[src$='#floatright'] {
+  float:right;
+}
+section.post img {
+  padding: 0px;
+}
+h1 {
+  font-size: 2.6em;
+}

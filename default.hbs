@@ -29,6 +29,10 @@
     {{! Styles and Scripts }}
     <!-- build:css /assets/css/uno.css -->
     <link rel="stylesheet" type="text/css" href="{{asset "css/uno.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
+    <!-- endbuild -->
+    <!-- build:css /assets/css/prism.css -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/prism.css" />
     <!-- endbuild -->
 
     {{! Ghost Magic }}
@@ -57,7 +61,13 @@
 
     {{! The main JavaScript file for Casper }}
     <!-- build:js /assets/js/main.js -->
-    <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <!-- endbuild -->
+    <!-- build:js /assets/js/prism.js -->
+    <script type="text/javascript" src="/assets/js/prism.js"></script>
+    <!-- endbuild -->
+    <!-- build:js /assets/js/jQuery.fitvids.js -->
+    <script type="text/javascript" src="/assets/js/jQuery.fitvids.js"></script>
     <!-- endbuild -->
 
     <!-- build:remove -->

@@ -61,7 +61,7 @@ module.exports = function(grunt) {
                         dest: 'release/'
                     },
                     {
-                        src: ['assets/**/*', '!assets/scss/**/*'],
+                        src: ['assets/**/*', '!assets/css/**/*', '!assets/js/**/*', '!assets/scss/**/*'],
                         dest: 'release/'
                     }
                 ]
@@ -103,14 +103,25 @@ module.exports = function(grunt) {
             release: {
                 files: {
                     src: [
-                        'release/assets/css/vendor.css',
+                        'release/assets/css/{,*/}*.css',
                         'release/assets/images/background/*.{gif,jpeg,jpg,png,svg}',
-                        'release/assets/fonts/{,*/}*.*',
+       //                 'release/assets/fonts/{,*/}*.*',
                         'release/assets/js/{,*/}*.js'
                     ]
                 }
             }
         },
+
+        concat: {
+            options: {
+                separator: '\n',
+            },
+            dist: {
+                src: ['assets/css/uno.css', 'assets/css/custom.css'],
+                dest: 'release/assets/css/uno.css',
+            }
+        },
+
 
         // The following *-min tasks produce minified files in the release folder
         imagemin: {
